@@ -21,7 +21,7 @@ html {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-in-out;
+    transition: max-height 0.1s ease-in-out;
     background-color: #f1f1f1;
 }
   
@@ -47,7 +47,7 @@ html {
   
 .active, .collapsible:hover {
     background-color: #d4af37;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 }
   
 .collapsible:after {
