@@ -17,7 +17,7 @@ const sampleData = {
     author: "Shravan"
 }
 db.collection('sampleData').doc('inspiration').set(sampleData)
-  .then(() => console.log("Semnbbkxy"))
+  .then(() => console.log("Data added"))
   .catch((err) => console.log(err));
 
 // BodyParser Middleware
