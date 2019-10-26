@@ -1,6 +1,6 @@
 html {
     font-family: 'Palanquin', sans-serif;
-    background-image: url('rachel-park-hrlvr2ZlUNk-unsplash.jpg');
+    background-image: url('intake_background.jpg');
     background-size: 100%;
     overflow: scroll; 
     width: 100%;
@@ -12,12 +12,57 @@ html {
     height: 73vh; 
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 7%;
     padding: 0.5vh;
     padding-left: 3vw;
     padding-right: 3vw;
     background: rgba(230, 87, 0, 1);
     border: #00aab5 solid 5px;
     border-radius: 8px;
-    color: black;
+    color: white;
   }
+
+header {
+    left: 0;
+    top: 0;
+    height: 150px;
+    color: white;
+}
+
+#group {
+    font-size: 1.8em;
+    line-height: 1.0em;
+}
+
+#title {
+    font-size: 2.4em;
+}
+
+#header-logo {
+    float: left;
+}
+
+#header-section {
+    width: 30%;
+    margin-left: 1%;
+    padding-top: 25px;
+    float: left;
+    color: white;
+}
+
+    #header-section a:link {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    #header-section a:visited {
+        color: #ffffff;
+    }
+
+    #header-section a:hover, #header-section a:active, #header-section a:focus {
+        color: #d4af37;
+    }
+
+    #header-section a div {
+        display: block;
+        width: 100%;
+    }
