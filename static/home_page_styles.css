@@ -78,8 +78,7 @@ input.get-started-button {
 }
 
 input.get-started-button:hover {
-    color: white;
-    /*background: #4ab4ff;*/
+    color: #00aab5;
     border-color: #00aab5;
 }
 
