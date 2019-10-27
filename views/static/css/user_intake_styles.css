@@ -1,6 +1,6 @@
 html {
     font-family: 'Palanquin', sans-serif;
-    background-image: url('intake_background.jpg');
+    background-image: url('../img/intake_background.jpg');
     background-size: 100%;
     overflow: scroll; 
     width: 100%;

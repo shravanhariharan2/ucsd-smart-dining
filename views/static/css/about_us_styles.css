@@ -1,0 +1,146 @@
+html {
+    font-family: 'Palanquin', sans-serif;
+    background-image: url('../img/about-us-background.jpg');
+    background-size: 100%;
+    overflow: scroll; 
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+}
+
+header, article {
+    margin: 8px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #e65700;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 2em;
+    margin-bottom: -2.3em;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 20px;
+    font-weight: 900;   
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ffa01c;
+}
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #ffa01c;
+    color: white;
+}
+
+header {
+    left: 0;
+    top: 0;
+    height: 120px;
+    color: white;
+ }
+
+footer {
+    left: 0;
+    bottom: 0;
+    height: 3em;
+    width: 100%;
+    background-color: #d4af37;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+ }
+
+#group {
+    font-size: 1.8em;
+    line-height: 1.0em;
+}
+
+#title {
+    font-size: 2.4em;
+}
+
+#header-logo {
+    float: left;
+}
+
+#header-section {
+    width: 30%;
+    margin-left: 1%;
+    padding-top: 25px;
+    float: left;
+    color: white;
+}
+
+    #header-section a:link {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    #header-section a:visited {
+        color: #ffffff;
+    }
+
+    #header-section a:hover, #header-section a:active, #header-section a:focus {
+        color: #000080;
+    }
+
+    #header-section a div {
+        display: block;
+        width: 100%;
+    }
+
+#features {
+    background: #00aab5;
+    border-radius: 15px;
+    margin-top: -4em;
+}
+
+h2 {
+    font-size: 50px;
+    color: white;
+}
+
+.description {
+    font-size: 20px;
+    color: white;
+    margin-top: -2em;
+}
+
+article {
+    padding-left: 3em;
+    padding-bottom: 0.5em;
+}
+
+#teampic {
+    float: right;
+    height: 50vh;
+    margin-right: 2em;
+    margin-top: -3em;
+    margin-left: 2em;
+}
+
+#address:link {
+    color: #e65700;
+    text-decoration: none;
+}
+
+#address:visited {
+    color: #e65700;
+}
+
+#address:hover, #address:active, #address:focus {
+    color: #870000;
+}

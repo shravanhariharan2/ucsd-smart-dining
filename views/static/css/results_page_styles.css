@@ -1,6 +1,6 @@
 html {
     font-family: 'Palanquin', sans-serif;
-    background-image: url('../img/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg');
+    background-image: url('../img/results_background.jpg');
     background-size: 100%;
     overflow: scroll; 
     width: 100%;
@@ -65,7 +65,7 @@ html {
 footer {
     left: 0;
     bottom: 0;
-    height: 200px;
+    height: 3em;
     width: 100%;
     background-color: #d4af37;
     color: white;
@@ -76,7 +76,7 @@ footer {
  header {
     left: 0;
     top: 0;
-    height: 200px;
+    height: 15em;
     color: white;
  }
 
@@ -117,4 +117,17 @@ footer {
     #header-section a div {
         display: block;
         width: 100%;
+    }
+
+    #address:link {
+        color: #e65700;
+        text-decoration: none;
+    }
+    
+    #address:visited {
+        color: #e65700;
+    }
+    
+    #address:hover, #address:active, #address:focus {
+        color: #870000;
     }

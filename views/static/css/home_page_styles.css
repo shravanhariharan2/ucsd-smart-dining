@@ -1,9 +1,43 @@
 html {
     font-family: 'Palanquin', sans-serif;
-    background-image: url('../img/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg');
+    background-image: url('../img/home_background.jpg');
     background-size: 100%;
     overflow: scroll; 
     width: 100%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #e65700;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: -0.7em;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ffa01c;
+}
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #ffa01c;
+    color: white;
+}
+
+body {
+    margin: 25px;
 }
 
 header {
@@ -21,7 +55,7 @@ body {
 
 #group {
     font-size: 3.2em;
-    line-height: 1.2em;
+    line-height: 2.2em;
 }
 
 #header-logo {
@@ -78,19 +112,22 @@ input.get-started-button {
 }
 
 input.get-started-button:hover {
-    color: white;
-    /*background: #4ab4ff;*/
+    color: #00aab5;
     border-color: #00aab5;
 }
 
 #features {
     background: #00aab5;
+    border-radius: 15px;
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 #contributors {
     background: #d4af37;
     padding-bottom: 1em;
     padding-top: 1em;
+    border-radius: 15px;
 }
 
 h1 {
@@ -129,4 +166,17 @@ h3 {
 #learn-more {
     margin-top: 15em;
     font-size: 30px;
+}
+
+#about:link {
+    color: #e65700;
+    text-decoration: none;
+}
+
+#about:visited {
+    color: #e65700;
+}
+
+#about:hover, #about:active, #about:focus {
+    color: #870000;
 }

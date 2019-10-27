@@ -16,33 +16,35 @@
           </a>
       </div>
       <div id="header-section" role="navigation">
-          <a href='https://hdh-web.ucsd.edu/dining/apps/diningservices/'>
+          <a href='./#index'>
               <div id="group">Smart Dining Services</div>
-              <div id="title"><b>Calorie Filter</b></div>
+              <div id="title">Calorie Filter</div>
           </a>
       </div>
   </header>
     <!--Navigation Bar-->
     <b><div class="topnav">
-      <a class="active" href="#home">HOME</a>
-      <a href="#about">ABOUT US</a>
+      <a href="./#index">Home</a>
+      <a href="./about">About Us</a>
+      <a class="active">Smart Dining Form</a>
     </div></b>
 
     <!--Box-->
-    <div class=>
-
-    </div>
 
     <!--Search Low to High-->
-    <center><div class="search-container">
-      <input id="searchone" name="search" type="text" class="search" placeholder="Enter low">
-      <input id="searchtwo" name="search" type="text" class="search" placeholder="Enter high">
+    <div class="search-container">
+      <input id="searchone" name="search" type="text" class="search" placeholder="Lower Bound">
+      <input id="searchtwo" name="search" type="text" class="search" placeholder="Upper Bound">
+      <br/>
       <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
-    </div></center>
+      <p id="instructions">Enter your desired calorie range in
+        <br/>the fields above, and we will give you dietary
+        <br/>recommendations based on your inputs!</p>
+    </div>
 
     <!--Footer-->
     <footer>
-      <p>Any problems with the site? Feel free to <a href = "mailto: shungo.najima@gmail.com">email us!</a></p>
+      <p>Any problems with the site? Feel free to <a id="address" href = "mailto: shungo.najima@gmail.com">email us!</a></p>
     </footer>
   </body>
 </html>
