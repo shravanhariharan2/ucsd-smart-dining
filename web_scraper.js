@@ -1,7 +1,6 @@
 const cheerio = require("cheerio");
 const axios = require("axios");
 
-//const siteUrl = "https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/MenuItem/64";
 
 let diningHall = "";
 
