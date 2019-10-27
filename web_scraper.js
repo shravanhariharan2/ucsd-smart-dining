@@ -70,10 +70,12 @@ const clean_json = (json) =>{ //takes in a json and cleans data
 
 const follow_links = async (json) =>{
     let calories  = [];
+    let used  = [];
     for(let i = 0; i < json.links.length; i++){ // !!!!!!!!!!!!!!!!!!!!!!!
-        let cals = await follow_link(json, json.links[i],calories);
-        if(cals != -1){
-            calories.push(cals);
+        let info = await follow_link(json, json.links[i],calories);
+        if(info[0] != -1 && !used.includes(info[1])){
+            calories.push(info[0]);
+            used.push(info[1]);
         }
 
     }
@@ -86,16 +88,15 @@ const follow_links = async (json) =>{
 const follow_link = async (json, link,calories) =>{
     const $ = await fetchData(link);
 
-    let name = $('h1').last().text();
+    let name = $('h1').last().text().trim();
 
     let cals = $('td').first().text();
- 
-    if(json.foodItems.includes(name.trim())){
-        console.log(name);
-        return cals;
+
+    if(json.foodItems.includes(name)){
+        return [cals, name];
     }
     else{
-        return -1;
+        return [-1,''];
     }
     
 }
