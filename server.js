@@ -10,12 +10,53 @@ const app = express();
 app.use(express.static("./views/static"));
 app.set('view engine', 'ejs');
 
+
 //Database initialization
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL: 'https://ucsd-smart-dining.firebaseio.com'
 })
 const db = admin.firestore();
+
+
+// Database Reading
+let restaurants = ['64 Degrees', 'Cafe Ventanas', 'Pines', 'OVT', 'Foodworx', 'Goody\'s', 'Warren Food Trucks', 'Roots', 'Club Med'];
+restaurants.forEach(restName => {
+
+  let restArray = [];
+
+  const restRef = db.collection(restName);
+  let query = restRef.get()
+  .then(snapshot => {
+    if (snapshot.empty) {
+      console.log('No matching documents.');
+      return;
+    }
+    snapshot.forEach(doc => {
+      console.log(doc.data().name + ': ' + doc.data().price);
+      restArray.push(doc.data());
+    });
+  })
+  .catch(err => {
+    console.log('Error getting documents', err);
+  });
+
+  app.set(restName, restArray);
+});
+  
+
+
+// const sixtyfour = db.collection('64 Degrees').doc('burger')
+// let sixtyData = [];
+// const getSixty = sixtyfour.get()
+//   .then(doc => {
+//     sixtyData.push(doc.data());
+//     console.log()
+//   })
+//   .catch(err => {
+//     console.log('Error getting document', err);
+//   });
+
 
 // BodyParser Middleware
 app.use(bodyParser.json());
