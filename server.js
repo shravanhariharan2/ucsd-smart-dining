@@ -33,7 +33,6 @@ restaurants.forEach(restName => {
       return;
     }
     snapshot.forEach(doc => {
-      console.log(doc.data().name + ': ' + doc.data().price);
       restArray.push(doc.data());
     });
   })
