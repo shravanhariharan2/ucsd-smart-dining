@@ -33,10 +33,12 @@
 
     <!--Search Low to High-->
     <div class="search-container">
-      <input id="searchone" name="search" type="text" class="search" placeholder="Lower Bound">
-      <input id="searchtwo" name="search" type="text" class="search" placeholder="Upper Bound">
-      <br/>
-      <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+      <form action="/dining" method="POST" enctype="application/x-www-form-urlencoded">
+        <input id="searchone" name="searchone" type="text" class="search" placeholder="Lower Bound">
+        <input id="searchtwo" name="searchtwo" type="text" class="search" placeholder="Upper Bound">
+        <br/>
+        <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+      </form>    
       <p id="instructions">Enter your desired calorie range in
         <br/>the fields above, and we will give you dietary
         <br/>recommendations based on your inputs!</p>

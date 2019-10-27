@@ -45,13 +45,17 @@ restaurants.forEach(restName => {
 
 
 // BodyParser Middleware
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true })); 
 
 // Routes
 app.use('/', require('./routes/index'));
 app.use('/dining', require('./routes/dining'));
 app.use('/calorie', require('./routes/calorie'));
 app.use('/about', require('./routes/about'));
+
+app.post('/test', (req, res) => {
+  console.log(req);
+});
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server started on port ${port}`));
