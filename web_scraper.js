@@ -90,15 +90,9 @@ const follow_link = async (json, link,calories) =>{
     let name = $('h1').last().text().trim();
 
     let cals = $('td').first().text();
-<<<<<<< HEAD
- 
-    if(json.foodItems.includes(name.trim())){
-        return cals;
-=======
 
     if(json.foodItems.includes(name)){
         return [cals, name];
->>>>>>> a7a6f6d562967fd1642f21356f8cbc80605cd07c
     }
     else{
         return [-1,''];

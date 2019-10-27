@@ -22,7 +22,7 @@ function db_function(db, value){
             price: value.price[i],
             calories: parseInt(value.calories[i])
           }
-
+          console.log(value.diningHall);
           db.collection(value.diningHall).doc(value.foodItems[i]).set(data)
             .then(doc => {
               console.log("");
