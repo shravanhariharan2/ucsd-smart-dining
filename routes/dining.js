@@ -44,7 +44,7 @@ router.post('/', (req, res) => {
     let roots = req.app.get('Roots');
     let wft = req.app.get('Warren Food Trucks');
     let clubMed = req.app.get('Club Med');
-    let ovt = req.app.get('OVT');
+    let ovt = req.app.get('OceanView');
     let foodworx = req.app.get('Foodworx');
     let goodys = req.app.get('Goody\'s');
 

@@ -91,7 +91,6 @@ const follow_link = async (json, link,calories) =>{
     let cals = $('td').first().text();
  
     if(json.foodItems.includes(name.trim())){
-        console.log(name);
         return cals;
     }
     else{
