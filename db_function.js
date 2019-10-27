@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express');
 const admin = require('firebase-admin');
 const serviceAccount = require("./config/ServiceAccountKey.json");
@@ -65,3 +66,15 @@ function db_function(value){
   }
   
   module.exports = db_function; //leave as is
+=======
+function db_function(json){
+    console.log(json);
+    // console.log(json.diningHall);
+    // console.log(json.foodItems.length);
+    // console.log(json.price.length);
+        // console.log(json.links.length);
+  }
+
+
+  module.exports = db_function;
+>>>>>>> bd771a08d0c66eca22cfeff7df5f097107f8c08c
