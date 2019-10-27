@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const express = require('express');
 const admin = require('firebase-admin');
 const serviceAccount = require("./config/ServiceAccountKey.json");
@@ -8,7 +7,6 @@ const app = express();
 // EJS
 app.use(express.static("./views/static"));
 app.set('view engine', 'ejs');
-
 
 //Database initialization
 admin.initializeApp({
@@ -43,38 +41,32 @@ restaurants.forEach(restName => {
 });
 
 function db_function(value){
-/*Precondition: JSON of food data for single dining hall. This will run multiple times.
+      /*Precondition: JSON of food data for single dining hall. This will run multiple times.
       {
       diningHall: "name of dining hall as string"
       food: [array of food items]
       cost: [array of costs, same order as items]
       calories: [array of calories, same order as items]
-      **NOT SURE IF I"LL GET THIS IN TIME**
-      isVegan: [array of booleans, same order as items]
-      isVegetarian: [array of booleans, same order as items]
-      isGF: [array of booleans, same order as items]
-      isDairy: [array of booleans, same order as items]
+      } */
+
+      for(let i = 0; i < value.food.length; i++){
+        let data = {
+          name: value.food[i],
+          price: value.cost[i],
+          calories: value.calories[i]
+        }
+        db.collection(diningHall).doc(value.food[i]).set(data);
       }
-//Postcondition: data is uploaded into database
-      //console.log(value);
+      
+    
+      /*Postcondition: data is uploaded into database
+      console.log(value);
       for (let key in value) {
         if (value.hasOwnProperty(key)) {
             console.log(key + " -> " + value[key]);
         }
-    }
-    */
+    } */
   }
-  
-  module.exports = db_function; //leave as is
-=======
-function db_function(json){
-    console.log(json);
-    // console.log(json.diningHall);
-    // console.log(json.foodItems.length);
-    // console.log(json.price.length);
-        // console.log(json.links.length);
-  }
-
 
   module.exports = db_function;
->>>>>>> bd771a08d0c66eca22cfeff7df5f097107f8c08c
+

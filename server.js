@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const admin = require('firebase-admin');
 const serviceAccount = require("./config/ServiceAccountKey.json");
 const expressLayout = require('express-ejs-layouts');
+const diningHallLooper = require('./dining_hall_looper.js'); 
 
 const app = express();
 
@@ -17,7 +18,6 @@ admin.initializeApp({
     databaseURL: 'https://ucsd-smart-dining.firebaseio.com'
 })
 const db = admin.firestore();
-
 
 // Database Reading
 let restaurants = ['64 Degrees', 'Cafe Ventanas', 'Pines', 'OVT', 'Foodworx', 'Goody\'s', 'Warren Food Trucks', 'Roots', 'Club Med'];

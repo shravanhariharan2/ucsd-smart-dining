@@ -5,10 +5,7 @@ const siteUrlArray = ["https://hdh-web.ucsd.edu/dining/apps/diningservices/Resta
 "https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/MenuItem/11",
 "https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/MenuItem/18",
 "https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/MenuItem/05",
-"https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/MenuItem/24",
-"https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/MenuItem/15",
-"https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/MenuItem/06",
-"https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/MenuItem/32"];
+"https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/MenuItem/24"];
 
 
 (async () => {
