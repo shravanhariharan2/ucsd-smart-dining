@@ -57,10 +57,11 @@ header, article {
 }
 
 .content {
+    position: relative;
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-in-out;
+    transition: max-height 0.05s ease-in-out;
     background-color: #f1f1f1;
     margin-bottom: 1rem;
     border-radius: 25px;
