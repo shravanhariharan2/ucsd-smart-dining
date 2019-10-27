@@ -42,19 +42,6 @@ restaurants.forEach(restName => {
 
   app.set(restName, restArray);
 });
-  
-
-
-// const sixtyfour = db.collection('64 Degrees').doc('burger')
-// let sixtyData = [];
-// const getSixty = sixtyfour.get()
-//   .then(doc => {
-//     sixtyData.push(doc.data());
-//     console.log()
-//   })
-//   .catch(err => {
-//     console.log('Error getting document', err);
-//   });
 
 
 // BodyParser Middleware
