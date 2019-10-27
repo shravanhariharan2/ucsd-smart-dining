@@ -24,39 +24,57 @@
       <p id="options">Options for ___-___ calories:</p>
       <button class="collapsible">Pines</button>
       <div class="content">
-        <p>another bruh moment</p>
+        <% pines.forEach(food => { %>
+          <p><%- food.name %> : $<%- food.price %></p>
+        <% }); %>
       </div>
       <button class="collapsible">OceanView</button>
       <div class="content">
-        <p>moment</p>
+          <% ovt.forEach(food => { %>
+            <p><%- food.name %> : $<%- food.price %></p>
+          <% }); %>
       </div>
       <button class="collapsible">Goody's Place</button>
       <div class="content">
-        <p>u man</p>
+          <% goodys.forEach(food => { %>
+            <p><%- food.name %> : $<%- food.price %></p>
+          <% }); %>
       </div>
       <button class="collapsible">Foodworx</button>
       <div class="content">
-        <p>u man</p>
+          <% foodworx.forEach(food => { %>
+            <p><%- food.name %> : $<%- food.price %></p>
+          <% }); %>
       </div>
       <button class="collapsible">Club Med</button>
       <div class="content">
-        <p>u man</p>
+          <% clubMed.forEach(food => { %>
+            <p><%- food.name %> : $<%- food.price %></p>
+          <% }); %>
       </div>
       <button class="collapsible">Cafe Ventanas</button>
       <div class="content">
-        <p>u man</p>
+          <% cafeV.forEach(food => { %>
+            <p><%- food.name %> : $<%- food.price %></p>
+          <% }); %>
       </div>
       <button class="collapsible">Warren Food Trucks</button>
       <div class="content">
-        <p>u man</p>
+          <% wft.forEach(food => { %>
+            <p><%- food.name %> : $<%- food.price %></p>
+          <% }); %>
       </div>
       <button class="collapsible">Roots</button>
       <div class="content">
-        <p>u man</p>
+          <% roots.forEach(food => { %>
+            <p><%- food.name %> : $<%- food.price %></p>
+          <% }); %>
       </div>
       <button class="collapsible">64 Degrees</button>
       <div class="content">
-        <p>u man</p>
+          <% sixtyFour.forEach(food => { %>
+            <p><%- food.name %> : $<%- food.price %></p>
+          <% }); %>
       </div>
     </article>
 
