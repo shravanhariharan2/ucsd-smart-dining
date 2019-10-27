@@ -44,6 +44,8 @@ header, article {
 .topnav a.active {
     background-color: #ffa01c;
     color: white;
+    text-align: center;
+    font-size: 2em;
 }
 
 footer {
