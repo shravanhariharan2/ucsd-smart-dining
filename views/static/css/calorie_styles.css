@@ -1,15 +1,10 @@
 /* Set background image */
 html {
-<<<<<<< HEAD:static/calorie_styles.css
     font-family: 'Palanquin', sans-serif;
-    background: url(burrito_background.jpg) no-repeat center center fixed;
+    background: url(../img/burrito_background.jpg) no-repeat center center fixed;
     background-size: 100%;
     overflow: hidden; 
     width: 100%;
-=======
-    background: url(../img/burrito_background.jpg) no-repeat center center fixed;
-    background-size: cover;
->>>>>>> bf6f667e53171aaf722b067da0be545c3d66bb33:views/static/css/calorie_styles.css
     height: 100%;
 }
 
