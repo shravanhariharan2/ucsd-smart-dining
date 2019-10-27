@@ -2,8 +2,6 @@ const getResults = require('./web_scraper.js');
 const db_function = require('./db_function.js'); 
 
 function dining_hall_looper(){
-const siteUrlArray = [
-];
 
 const siteUrlArray = ["https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/MenuItem/64",
  "https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/MenuItem/01",
