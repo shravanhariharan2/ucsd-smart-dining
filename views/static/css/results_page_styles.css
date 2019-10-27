@@ -19,8 +19,8 @@ header, article {
 .topnav {
     background-color: #e65700;
     overflow: hidden;
-    border-radius: 15px;
-    margin-top: -105px;
+    border-radius: 1rem;
+    margin-top: -5.5rem;
 }
 
 /* Style the links inside the navigation bar */
@@ -48,11 +48,11 @@ header, article {
 #options {
     color:white;
     font-size: 45px;
-    line-height: 10px;
+    line-height: 1rem;
     text-align: center;
     background-color: #e65700;
     height: 50px;
-    padding-top: 30px;
+    padding-top: 2rem;
     border-radius: 25px;
 }
 
@@ -60,9 +60,9 @@ header, article {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.1s ease-in-out;
+    transition: max-height 0.2s ease-in-out;
     background-color: #f1f1f1;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     border-radius: 25px;
 }
   
@@ -77,13 +77,13 @@ header, article {
     background-color: #00aab5;
     color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 1.2rem;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 0.2rem;
     border-radius: 25px;
 }
   
@@ -107,28 +107,28 @@ header, article {
 footer {
     left: 0;
     bottom: 0;
-    height: 3em;
+    height: 4rem;
     width: 100%;
     background-color: #d4af37;
     color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 2rem;
  }
 
  header {
     left: 0;
     top: 0;
-    height: 15em;
+    height: 15rem;
     color: white;
  }
 
 #group {
-    font-size: 1.8em;
-    line-height: 1.0em;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
 }
 
 #title {
-    font-size: 2.4em;
+    font-size: 2.4rem;
 }
 
 #header-logo {
@@ -137,8 +137,7 @@ footer {
 
 #header-section {
     width: 30%;
-    margin-left: 1%;
-    padding-top: 25px;
+    padding-top: 2rem;
     float: left;
     color: white;
 }

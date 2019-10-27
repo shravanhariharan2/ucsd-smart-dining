@@ -20,8 +20,8 @@ header, article {
 .topnav {
     background-color: #e65700;
     overflow: hidden;
-    border-radius: 15px;
-    margin-top: -65px;
+    border-radius: 1rem;
+    margin-top: 3rem;
 }
 
 /* Style the links inside the navigation bar */
@@ -31,8 +31,7 @@ header, article {
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
-    font-size: 20px;
-    font-weight: 900;   
+    font-size: 20px; 
 }
 
 /* Change the color of links on hover */
@@ -45,34 +44,33 @@ header, article {
     background-color: #ffa01c;
     color: white;
     text-align: center;
-    font-size: 2em;
 }
 
 footer {
     left: 0;
     bottom: 0;
-    height: 70px;
+    height: 4rem;
     width: 100%;
     background-color: #d4af37;
     color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 header {
     left: 0;
     top: 0;
-    height: 200px;
+    height: 8rem;
     color: white;
  }
 
 #group {
-    font-size: 1.8em;
-    line-height: 1.0em;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
 }
 
 #title {
-    font-size: 2.4em;
+    font-size: 2.4rem;
 }
 
 #header-logo {
@@ -81,8 +79,7 @@ header {
 
 #header-section {
     width: 30%;
-    margin-left: 1%;
-    padding-top: 25px;
+    padding-top: 2rem;
     float: left;
     color: white;
 }
@@ -107,36 +104,38 @@ header {
 
 .search-container {
     margin: auto;
-    width: 50em;
+    width: 50rem;
     border-radius: 15px;
     background-color: #00aab5;
-    height: 21em;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     text-align: center;
-    margin-top: -8em;
+    margin-top: -4rem;
 }
 
 #instructions {
-    margin-top: -0.1em;
+    margin-top: -0.1rem;
     font-size: 30px;
     color: white;
+    line-height: 4rem;
 }
 
 .search {
     width: 30%;
     border: 3px solid #00aab5;
     background-color: #4dfff6;
-    padding: 5px;
+    padding: 0.6rem;
     height: 35px;
     font-size: 30px;
     border-radius: 15px;
     display: inline-block;
-    margin-top: 0.5em;
+    margin-top: 0.7rem;
 }
 
 .searchButton {
-    margin-top: 0.5em;
-    width: 3em;
-    height: 2.8em;
+    margin-top: 0.5rem;
+    width: 4rem;
+    height: 3.5rem;
     border: 3px solid #e65700;
     border-radius: 5px;
     background: #e65700;

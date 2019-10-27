@@ -10,8 +10,8 @@ html {
 .topnav {
     background-color: #e65700;
     overflow: hidden;
-    border-radius: 15px;
-    margin-top: -0.7em;
+    border-radius: 1rem;
+    margin-top: 1rem;
 }
 
 /* Style the links inside the navigation bar */
@@ -43,9 +43,9 @@ body {
 header {
     left: 0;
     top: 0;
-    height: 200px;
+    height: 10rem;
     color: white;
-    margin-bottom: 15em;
+    margin-bottom: 15rem;
 }
 
 body {
@@ -54,8 +54,8 @@ body {
 }
 
 #group {
-    font-size: 3.2em;
-    line-height: 2.2em;
+    font-size: 3.2rem;
+    line-height: 2.2rem;
 }
 
 #header-logo {
@@ -65,8 +65,7 @@ body {
 }
 
     #header-logo img {
-        margin-top: 30px;
-        margin-left: 25px;
+        margin-top: 2.5rem;
         right: 0;
         bottom: 0;
         height: auto;
@@ -75,8 +74,7 @@ body {
 
 #header-section {
     width: 100%;
-    margin-left: 1%;
-    padding-top: 15px;
+    padding-top: 1rem;
     color: white;
 }
 
@@ -99,8 +97,8 @@ body {
     }
 
 input.get-started-button {
-    width: 500px;
-    padding: 20px;
+    width: 25rem;
+    padding: 1.2rem;
     cursor: pointer;
     font-weight: bold;
     font-size: 150%;
@@ -108,7 +106,7 @@ input.get-started-button {
     color: white;
     border: 5px solid white/*#3366cc*/;
     border-radius: 10px;
-    margin-bottom: 6em;
+    margin-bottom: 11rem;
 }
 
 input.get-started-button:hover {
@@ -119,20 +117,20 @@ input.get-started-button:hover {
 article {
     background: #00aab5;
     border-radius: 15px;
-    padding-bottom: 1em;
-    margin-bottom: 2.5em;
-    padding-top: 0.4em;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    padding-top: 0.2rem;
 }
 
 #contributors {
     background: #d4af37;
-    padding-bottom: 1em;
-    padding-top: 0.5em;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
     border-radius: 15px;
 }
 
 h1 {
-    padding-top: 0.5em;
+    padding-top: 0.4rem;
     font-size: 70px;
 }
 
@@ -151,6 +149,7 @@ h3 {
 
 .description {
     font-size: 30px;
+    line-height: 4rem;
 }
 
 .grad-and-major {
@@ -160,12 +159,11 @@ h3 {
 .column {
     float: left;
     width: 23%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    padding: 0.7rem;
+    height: 23rem; /* Should be removed. Only for demonstration */
   }
 
 #learn-more {
-    margin-top: 15em;
     font-size: 30px;
 }
 
