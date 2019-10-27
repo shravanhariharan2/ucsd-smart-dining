@@ -1,0 +1,182 @@
+html {
+    font-family: 'Palanquin', sans-serif;
+    background-image: url('../img/home_background.jpg');
+    background-size: 100%;
+    overflow: scroll; 
+    width: 100%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #e65700;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: -0.7em;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ffa01c;
+}
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #ffa01c;
+    color: white;
+}
+
+body {
+    margin: 25px;
+}
+
+header {
+    left: 0;
+    top: 0;
+    height: 200px;
+    color: white;
+    margin-bottom: 15em;
+}
+
+body {
+    text-align: center;
+    color: white;
+}
+
+#group {
+    font-size: 3.2em;
+    line-height: 2.2em;
+}
+
+#header-logo {
+    position:relative;
+    width: 100%;
+    display: inline-block;
+}
+
+    #header-logo img {
+        margin-top: 50px;
+        margin-left: 25px;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        width: 200px;
+    }
+
+#header-section {
+    width: 100%;
+    margin-left: 1%;
+    padding-top: 15px;
+    color: white;
+}
+
+    #header-section a:link {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    #header-section a:visited {
+        color: #ffffff;
+    }
+
+    #header-section a:hover, #header-section a:active, #header-section a:focus {
+        color: #e65700;
+    }
+
+    #header-section a div {
+        display: block;
+        width: 100%;
+    }
+
+input.get-started-button {
+    width: 500px;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 150%;
+    background-color: rgba(64, 95, 158, 0);
+    color: white;
+    border: 5px solid white/*#3366cc*/;
+    border-radius: 10px;
+    margin-bottom: 6em;
+}
+
+input.get-started-button:hover {
+    color: #00aab5;
+    border-color: #00aab5;
+}
+
+#features {
+    background: #00aab5;
+    border-radius: 15px;
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
+}
+
+#contributors {
+    background: #d4af37;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-radius: 15px;
+}
+
+h1 {
+    padding-top: 0.5em;
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.pics {
+    border-radius: 50%;
+}
+
+.description {
+    font-size: 30px;
+}
+
+.grad-and-major {
+    font-size: 20px;
+}
+
+.column {
+    float: left;
+    width: 23%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+#learn-more {
+    margin-top: 15em;
+    font-size: 30px;
+}
+
+#about:link {
+    color: #e65700;
+    text-decoration: none;
+}
+
+#about:visited {
+    color: #e65700;
+}
+
+#about:hover, #about:active, #about:focus {
+    color: #870000;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+  <head>
+    <title>Dining Recommendations</title>
+    <link rel="stylesheet" href="results_page_styles.css" type="text/css">
+    <link rel="icon" href="https://hdh-web.ucsd.edu/dining/apps/diningservices/favicon.ico">
+  </head>
+  <body>
+    <header>
+        <div id="header-logo">
+            <a href='https://hdh-web.ucsd.edu/dining/apps/diningservices/' title="Return to Housing Dining Hospitality Homepage">
+                <img id="logo" src='https://hdh-web.ucsd.edu/dining/apps/diningservices/images/Logo-HDH.png' width="145" height="144" alt="Logo:  HDH" />
+            </a>
+        </div>
+        <div id="header-section" role="navigation">
+            <a href='https://hdh-web.ucsd.edu/dining/apps/diningservices/'>
+                <div id="group">Smart Dining Services</div>
+                <div id="title">Recommended Entrées</div>
+            </a>
+        </div>
+    </header>
+    <article>
+      <p id="options">Options for ___-___ calories:</p>
+      <button class="collapsible">Pines</button>
+      <div class="content">
+        <p>another bruh moment</p>
+      </div>
+      <button class="collapsible">OceanView</button>
+      <div class="content">
+        <p>shit moment</p>
+      </div>
+      <button class="collapsible">Goody's Place</button>
+      <div class="content">
+        <p>u man</p>
+      </div>
+      <button class="collapsible">Foodworx</button>
+      <div class="content">
+        <p>u man</p>
+      </div>
+      <button class="collapsible">Club Med</button>
+      <div class="content">
+        <p>u man</p>
+      </div>
+      <button class="collapsible">Cafe Ventanas</button>
+      <div class="content">
+        <p>u man</p>
+      </div>
+      <button class="collapsible">Warren Food Trucks</button>
+      <div class="content">
+        <p>u man</p>
+      </div>
+      <button class="collapsible">Roots</button>
+      <div class="content">
+        <p>u man</p>
+      </div>
+      <button class="collapsible">64 Degrees</button>
+      <div class="content">
+        <p>u man</p>
+      </div>
+    </article>
+
+    <footer>
+      <p>Any problems with the site? Feel free to <a href = "mailto: shungo.najima@gmail.com">email us!</a></p>
+    </footer>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+           } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+           } 
+        });
+      }
+    </script>
+
+  </body>
+</html>
