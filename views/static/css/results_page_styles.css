@@ -7,6 +7,44 @@ html {
     height: 100%;
 }
 
+body {
+    margin: 0px;
+}
+
+header, article {
+    margin: 25px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #e65700;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: -105px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 20px;
+    font-weight: 900;   
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ffa01c;
+}
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #ffa01c;
+    color: white;
+}
+
 #options {
     color:white;
     font-size: 45px;
@@ -15,6 +53,7 @@ html {
     background-color: #e65700;
     height: 50px;
     padding-top: 30px;
+    border-radius: 25px;
 }
 
 .content {
@@ -23,6 +62,8 @@ html {
     overflow: hidden;
     transition: max-height 0.1s ease-in-out;
     background-color: #f1f1f1;
+    margin-bottom: 1em;
+    border-radius: 25px;
 }
   
   /* Clear floats after the columns */
@@ -43,6 +84,7 @@ html {
     outline: none;
     font-size: 25px;
     margin-bottom: 5px;
+    border-radius: 25px;
 }
   
 .active, .collapsible:hover {
