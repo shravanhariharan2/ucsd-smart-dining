@@ -4,21 +4,22 @@
     <link rel="stylesheet" href="./css/calorie_styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./img/burger-icon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="description" value="UCSD Smart Dining">
     <title>Fill Calorie Form</title>
   </head>
   <body>
     <header>
-      <div id="header-logo">
+      <div class="header-logo">
           <a href='./#index' title="Return to Smart Dining Services Homepage">
-              <img id="logo" src='./img/sdslogo.png' width="145" height="144" alt="Logo: SDS" />
+              <img class="logo" src='./img/sdslogo.png' width="145" height="144" alt="Logo: SDS" />
           </a>
       </div>
-      <div id="header-section" role="navigation">
+      <div class="header-section" role="navigation">
           <a href='./#index'>
-              <div id="group">Smart Dining Services</div>
-              <div id="title">Calorie Filter</div>
+              <div class="group">Smart Dining Services</div>
+              <div class="title">Calorie Filter</div>
           </a>
       </div>
     </header>
@@ -33,22 +34,21 @@
     <!--Box-->
 
     <article>
-    <!--Search Low to High-->
-    <div class="search-container">
-      <form action="/dining" method="POST" enctype="application/x-www-form-urlencoded">
-        <input id="searchone" name="searchone" type="text" class="search" placeholder="Lower Bound">
-        <input id="searchtwo" name="searchtwo" type="text" class="search" placeholder="Upper Bound">
-        <br/>
-        <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
-      </form>    
-      <p id="instructions">Enter your desired calorie range in
-        <br/>the fields above, and we will give you dietary
-        <br/>recommendations based on your inputs!</p>
-    </div>
+      <!--Search Low to High-->
+      <div class="search-container">
+        <form action="/dining" method="POST" enctype="application/x-www-form-urlencoded">
+          <input id="searchone" name="searchone" type="text" class="search" placeholder="Lower Bound">
+          <input id="searchtwo" name="searchtwo" type="text" class="search" placeholder="Upper Bound">
+          <br/>
+          <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+        </form>    
+        <p class="instructions">Enter your desired calorie range in the fields above, and we will give you dietary recommendations based on your inputs!</p>
+      </div>
+    </article>
 
     <!--Footer-->
     <footer>
-      <p>Any problems with the site? Feel free to <a id="address" href = "mailto: shungo.najima@gmail.com">email us!</a></p>
+      Any problems with the site? Feel free to <a class="address" href = "mailto: shungo.najima@gmail.com">email us!</a>
     </footer>
   </body>
 </html>
