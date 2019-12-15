@@ -5,18 +5,19 @@
     <title>Dining Recommendations</title>
     <link rel="stylesheet" href="./css/results_page_styles.css" type="text/css">
     <link rel="icon" href="./img/burger-icon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-        <div id="header-logo">
+        <div class="header-logo">
             <a href='./#index' title="Return to Smart Dining Services Homepage">
-                <img id="logo" src='./img/sdslogo.png' width="145" height="144" alt="Logo: SDS" />
+                <img class="logo" src='./img/sdslogo.png' width="145" height="144" alt="Logo: SDS" />
             </a>
         </div>
-        <div id="header-section" role="navigation">
+        <div class="header-section" role="navigation">
             <a href='./#index'>
-                <div id="group">Smart Dining Services</div>
-                <div id="title">Recommended Entrées</div>
+                <div class="group">Smart Dining Services</div>
+                <div class="title">Recommended Entrées</div>
             </a>
         </div>
     </header>
@@ -29,120 +30,192 @@
       </div></b>
     </header>
     <article>
-      <p id="options">Options for <%- minCalories %> - <%- maxCalories %> calories:</p>
+      <div class="options">Options for <%- minCalories %> - <%- maxCalories %> calories:</div>
       <button class="collapsible">Pines</button>
-      <div class="content" style="font-size: 20px;">
+      <div class="content">
         <% if(pines.length == 0) { %>
           <p style="color:red; font-weight:bold">No current data</p>
         <% } else { %>
+          <% let first = true %>
           <% pines.forEach(food => { %>
             <% if(food.calories >= minCalories && food.calories <= maxCalories) {%>
-              <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
-              <p>Calories: <%- food.calories %></p>
+              <% if (first) { %>
+                <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                <p>Calories: <%- food.calories %></p>
+                <% first = false; %>
+              <% } else { %>
+                <hr>
+                <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                <p>Calories: <%- food.calories %></p>
+              <% } %>
             <% } %>
           <% }); %>
         <% }%>
       </div>
       <button class="collapsible">OceanView</button>
-      <div class="content" style="font-size: 20px;">
-        <% if(ovt.length == 0) { %>
-          <p style="color:red; font-weight:bold">No current data</p>      
-        <% } else { %>
-          <% ovt.forEach(food => { %>
-            <% if(food.calories >= minCalories && food.calories <= maxCalories) {%>
-              <p style="font-weight:bold"><%- food.name %> : <% food.price %></p>
-              <p>Calories: <%- food.calories %></p>
-            <% } %>
-          <% }); %>
-        <% }%>
+      <div class="content">
+          <% if(ovt.length == 0) { %>
+            <p style="color:red; font-weight:bold">No current data</p>
+          <% } else { %>
+            <% let first = true %>
+            <% ovt.forEach(food => { %>
+              <% if(food.calories >= minCalories && food.calories <= maxCalories) {%>
+                <% if (first) { %>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                  <% first = false; %>
+                <% } else { %>
+                  <hr>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                <% } %>
+              <% } %>
+            <% }); %>
+          <% }%>
       </div>
       <button class="collapsible">Goody's Place</button>
-      <div class="content" style="font-size: 20px;">
+      <div class="content">
           <% if(goodys.length == 0) { %>
             <p style="color:red; font-weight:bold">No current data</p>
           <% } else { %>
+            <% let first = true %>
             <% goodys.forEach(food => { %>
               <% if(food.calories >= minCalories && food.calories <= maxCalories) {%>
-                <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
-                <p>Calories: <%- food.calories %></p>
+                <% if (first) { %>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                  <% first = false; %>
+                <% } else { %>
+                  <hr>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                <% } %>
               <% } %>
             <% }); %>
           <% }%>
       </div>
       <button class="collapsible">Foodworx</button>
-      <div class="content" style="font-size: 20px;">
+      <div class="content">
           <% if(foodworx.length == 0) { %>
             <p style="color:red; font-weight:bold">No current data</p>
           <% } else { %>
+            <% let first = true %>
             <% foodworx.forEach(food => { %>
               <% if(food.calories >= minCalories && food.calories <= maxCalories) {%>
-                <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
-              <p>Calories: <%- food.calories %></p>
+                <% if (first) { %>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                  <% first = false; %>
+                <% } else { %>
+                  <hr>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                <% } %>
               <% } %>
             <% }); %>
           <% }%>
       </div>
       <button class="collapsible">Club Med</button>
-      <div class="content" style="font-size: 20px;">
+      <div class="content">
           <% if(clubMed.length == 0) { %>
             <p style="color:red; font-weight:bold">No current data</p>
           <% } else { %>
+            <% let first = true %>
             <% clubMed.forEach(food => { %>
               <% if(food.calories >= minCalories && food.calories <= maxCalories) {%>
-                <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
-              <p>Calories: <%- food.calories %></p>
+                <% if (first) { %>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                  <% first = false; %>
+                <% } else { %>
+                  <hr>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                <% } %>
               <% } %>
             <% }); %>
           <% }%>
       </div>
       <button class="collapsible">Cafe Ventanas</button>
-      <div class="content" style="font-size: 20px;">
+      <div class="content">
           <% if(cafeV.length == 0) { %>
             <p style="color:red; font-weight:bold">No current data</p>
           <% } else { %>
+            <% let first = true %>
             <% cafeV.forEach(food => { %>
               <% if(food.calories >= minCalories && food.calories <= maxCalories) {%>
-                <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
-              <p>Calories: <%- food.calories %></p>
+                <% if (first) { %>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                  <% first = false; %>
+                <% } else { %>
+                  <hr>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                <% } %>
               <% } %>
             <% }); %>
           <% }%>
       </div>
       <button class="collapsible">Warren Food Trucks</button>
-      <div class="content" style="font-size: 20px;">
+      <div class="content">
           <% if(wft.length == 0) { %>
             <p style="color:red; font-weight:bold">No current data</p>
           <% } else { %>
+            <% let first = true %>
             <% wft.forEach(food => { %>
               <% if(food.calories >= minCalories && food.calories <= maxCalories) {%>
-              <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
-              <p>Calories: <%- food.calories %></p>
+                <% if (first) { %>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                  <% first = false; %>
+                <% } else { %>
+                  <hr>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                <% } %>
               <% } %>
             <% }); %>
           <% }%>
       </div>
       <button class="collapsible">Roots</button>
-      <div class="content" style="font-size: 20px;">
+      <div class="content">
           <% if(roots.length == 0) { %>
             <p style="color:red; font-weight:bold">No current data</p>
           <% } else { %>
+            <% let first = true %>
             <% roots.forEach(food => { %>
               <% if(food.calories >= minCalories && food.calories <= maxCalories) {%>
-                <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
-                <p>Calories: <%- food.calories %></p>
+                <% if (first) { %>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                  <% first = false; %>
+                <% } else { %>
+                  <hr>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                <% } %>
               <% } %>
             <% }); %>
           <% }%>
       </div>
       <button class="collapsible">64 Degrees</button>
-      <div class="content" style="font-size: 20px;">
+      <div class="content">
           <% if(sixtyFour.length == 0) { %>
             <p style="color:red; font-weight:bold">No current data</p>
           <% } else { %>
+            <% let first = true %>
             <% sixtyFour.forEach(food => { %>
               <% if(food.calories >= minCalories && food.calories <= maxCalories) {%>
-                <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
-              <p>Calories: <%- food.calories %></p>
+                <% if (first) { %>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                  <% first = false; %>
+                <% } else { %>
+                  <hr>
+                  <p style="font-weight:bold"><%- food.name %> : <%- food.price %></p>
+                  <p>Calories: <%- food.calories %></p>
+                <% } %>
               <% } %>
             <% }); %>
           <% }%>
@@ -150,7 +223,7 @@
     </article>
 
     <footer>
-      <p>Any problems with the site? Feel free to <a id="address" href = "mailto: shungo.najima@gmail.com">email us!</a></p>
+      Any problems with the site? Feel free to <a class="address" href = "mailto: shungo.najima@gmail.com">email us!</a>
     </footer>
 
     <script>

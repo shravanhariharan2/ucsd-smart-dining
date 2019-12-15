@@ -1,58 +1,116 @@
-html {
+/* Styling the entire page */
+body {
     font-family: 'Palanquin', sans-serif;
-    background-image: url('../img/results_background.jpg');
+    background: url(../img/results_background.jpg);
     background-size: 100%;
     overflow: scroll; 
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    margin: 0px;
-}
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
 
 header, article {
     margin: 25px;
 }
 
-/* Add a black background color to the top navigation */
+/* Styling the nav bar */
 .topnav {
     background-color: #e65700;
     overflow: hidden;
-    border-radius: 1rem;
-    margin-top: -5.5rem;
+    border-radius: 20px;
+    margin-top: -30px;
 }
 
-/* Style the links inside the navigation bar */
+/* Styling the links inside the navigation bar */
 .topnav a {
     float: left;
     color: white;
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
-    font-size: 20px;
-    font-weight: 900;   
+    font-size: 20px; 
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ffa01c;
 }
-  
-/* Add a color to the active/current link */
+
 .topnav a.active {
     background-color: #ffa01c;
     color: white;
+    text-align: center;
 }
 
-#options {
+/* Styling for the footer and header */
+footer {
+    width: 100%;
+    background-color: #d4af37;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+header {
+    color: white;
+ }
+
+.group {
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.header-logo {
+    float: left;
+}
+
+.header-section {
+    padding-top: 35px;
+    float: left;
+    color: white;
+}
+
+.header-section a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-section a:visited {
+    color: #ffffff;
+}
+
+.header-section a:hover, .header-section a:active, .header-section a:focus {
+    color: #e65700;
+}
+
+.header-section a div {
+    display: block;
+    width: 100%;
+}
+
+/* Styling for the "email us" message at the bottom of screen */
+.address:link {
+    color: #e65700;
+    text-decoration: none;
+}
+
+.address:visited {
+    color: #e65700;
+}
+
+.address:hover, .address:active, .address:focus {
+    color: #870000;
+}
+
+.options {
     color:white;
     font-size: 45px;
-    line-height: 1rem;
     text-align: center;
     background-color: #e65700;
-    height: 50px;
-    padding-top: 2rem;
+    margin-bottom: 45px;
     border-radius: 25px;
 }
 
@@ -61,10 +119,11 @@ header, article {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
     background-color: #f1f1f1;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
     border-radius: 25px;
+    font-size: 20px;
 }
   
   /* Clear floats after the columns */
@@ -78,19 +137,19 @@ header, article {
     background-color: #00aab5;
     color: white;
     cursor: pointer;
-    padding: 1.2rem;
+    padding: 20px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 25px;
-    margin-bottom: 0.2rem;
+    margin-bottom: 10px;
     border-radius: 25px;
 }
   
 .active, .collapsible:hover {
     background-color: #d4af37;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
   
 .collapsible:after {
@@ -105,71 +164,60 @@ header, article {
     content: "\2212";
 }
 
-footer {
-    left: 0;
-    bottom: 0;
-    height: 4rem;
-    width: 100%;
-    background-color: #d4af37;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
- }
+/* TABLET compatibility */
+@media (max-width: 900px) {
 
- header {
-    left: 0;
-    top: 0;
-    height: 15rem;
-    color: white;
- }
+    footer {
+        font-size: 20px;
+    }
 
-#group {
-    font-size: 1.8rem;
-    line-height: 1.8rem;
+    .options {
+        font-size: 35px;
+    }
+
 }
-
-#title {
-    font-size: 2.4rem;
-}
-
-#header-logo {
-    float: left;
-}
-
-#header-section {
-    width: 30%;
-    padding-top: 2rem;
-    float: left;
-    color: white;
-}
-
-    #header-section a:link {
-        color: #ffffff;
-        text-decoration: none;
+  
+  /* MOBILE compatibility */
+  @media (max-width: 600px) {
+  
+    .header-logo {
+        float: none;
+        text-align: center;
     }
 
-    #header-section a:visited {
-        color: #ffffff;
+    .header-section {
+        text-align: center;
+        margin: auto;
+        float: none;
     }
 
-    #header-section a:hover, #header-section a:active, #header-section a:focus {
-        color: #d4af37;
+    .topnav a {
+        font-size: 4vw;
+        padding: 2.2vw 2.6vw;
     }
 
-    #header-section a div {
-        display: block;
-        width: 100%;
+    footer {
+        font-size: 4vw;
+    }
+  
+    .options {
+        font-size: 5vw;
+        margin-bottom: 5vw;
     }
 
-    #address:link {
-        color: #e65700;
-        text-decoration: none;
+    .collapsible {
+        font-size: 4vw;
+        padding: 3vw;
+        margin-bottom: 1vw;
     }
-    
-    #address:visited {
-        color: #e65700;
+
+    .content {
+        font-size: 3vw;
     }
-    
-    #address:hover, #address:active, #address:focus {
-        color: #870000;
+
+    .topnav {
+        margin-bottom: -4vw;
     }
+
+  }
+  

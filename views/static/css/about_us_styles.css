@@ -1,143 +1,203 @@
-html {
+/* Styling the entire page */
+body {
     font-family: 'Palanquin', sans-serif;
-    background-image: url('../img/about-us-background.jpg');
+    background: url(../img/about-us-background.jpg);
     background-size: 100%;
     overflow: scroll; 
-    width: 100%;
-}
-
-body {
-    margin: 0px;
-}
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
 
 header, article {
     margin: 25px;
 }
 
-/* Add a black background color to the top navigation */
+/* Styling the nav bar */
 .topnav {
     background-color: #e65700;
     overflow: hidden;
-    border-radius: 1rem;
-    margin-top: 3rem;
+    border-radius: 20px;
+    margin-top: -30px;
 }
 
-/* Style the links inside the navigation bar */
+/* Styling the links inside the navigation bar */
 .topnav a {
     float: left;
     color: white;
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 20px; 
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ffa01c;
 }
-  
-/* Add a color to the active/current link */
+
 .topnav a.active {
     background-color: #ffa01c;
     color: white;
+    text-align: center;
 }
 
-header {
-    left: 0;
-    top: 0;
-    height: 8rem;
-    color: white;
- }
-
+/* Styling for the footer and header */
 footer {
-    left: 0;
-    bottom: 0;
-    height: 4rem;
     width: 100%;
     background-color: #d4af37;
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 30px;
+}
+
+header {
+    color: white;
  }
 
-#group {
-    font-size: 1.8rem;
-    line-height: 1.8rem;
+.group {
+    font-size: 25px;
+    line-height: 25px;
 }
 
-#title {
-    font-size: 2.4rem;
+.title {
+    font-size: 40px;
 }
 
-#header-logo {
+.header-logo {
     float: left;
 }
 
-#header-section {
-    width: 30%;
-    padding-top: 2rem;
+.header-section {
+    padding-top: 35px;
     float: left;
     color: white;
 }
 
-    #header-section a:link {
-        color: #ffffff;
-        text-decoration: none;
-    }
-
-    #header-section a:visited {
-        color: #ffffff;
-    }
-
-    #header-section a:hover, #header-section a:active, #header-section a:focus {
-        color: #000080;
-    }
-
-    #header-section a div {
-        display: block;
-        width: 100%;
-    }
-    
-#features {
-    background: #00aab5;
-    border-radius: 15px;
-    margin-top: -5rem;
-    padding-left: 3rem;
-    padding-bottom: 1rem;
+.header-section a:link {
+    color: #ffffff;
+    text-decoration: none;
 }
 
-h2 {
-    font-size: 4rem;
-    padding-top: 1rem;
-    color: white;
+.header-section a:visited {
+    color: #ffffff;
 }
 
-#description {
-    font-size: 1.3rem;
-    color: white;
-    margin-top: -3rem;
-    line-height: 2.7rem;
+.header-section a:hover, .header-section a:active, .header-section a:focus {
+    color: #000080;
 }
 
-#teampic {
-    float: right;
-    height: 15rem;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    margin-left: 2rem;
+.header-section a div {
+    display: block;
+    width: 100%;
 }
 
-#address:link {
+/* Styling for the "email us" message at the bottom of screen */
+.address:link {
     color: #e65700;
     text-decoration: none;
 }
 
-#address:visited {
+.address:visited {
     color: #e65700;
 }
 
-#address:hover, #address:active, #address:focus {
+.address:hover, .address:active, .address:focus {
     color: #870000;
 }
+  
+.features {
+    background: #00aab5;
+    border-radius: 15px;
+    padding-left: 45px; 
+    padding-right: 45px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+h2 {
+    font-size: 55px;
+    margin-top: -10px;
+    color: white;
+}
+
+.description {
+    font-size: 25px;
+    color: white;
+    margin-top: -50px;
+    line-height: 50px;
+}
+
+.teampic {
+    float: right;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+
+/* TABLET compatibility */
+@media (max-width: 900px) {
+
+    footer {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 5.6vw;
+        margin-bottom: 55px;
+    }
+    
+    .description {
+        font-size: 23px;
+        color: white;
+        line-height: 45px;
+    }
+
+}
+  
+  /* MOBILE compatibility */
+  @media (max-width: 600px) {
+  
+    .header-logo {
+        float: none;
+        text-align: center;
+    }
+
+    .header-section {
+        text-align: center;
+        margin: auto;
+        float: none;
+    }
+
+    .topnav a {
+        font-size: 4vw;
+        padding: 2.2vw 2.6vw;
+    }
+
+    footer {
+        font-size: 4vw;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 7vw;
+        text-align: center; 
+    }
+    
+    .description {
+        font-size: 20px;
+        color: white;
+        line-height: 40px;
+    }
+    
+    .teampic {
+        margin-bottom: 60px;
+        margin-top: 20px;
+        margin-left: 0;
+        height: 50vw;
+        float: none;
+        text-align: center;
+    }
+
+  }
+  
