@@ -1,51 +1,43 @@
-html {
+/* Styling the entire page */
+body {
     font-family: 'Palanquin', sans-serif;
-    background-image: url('../img/home_background.jpg');
+    background: url(../img/home_background.jpg);
     background-size: 100%;
     overflow: scroll; 
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+header, article {
+    margin: 25px;
 }
 
-/* Add a black background color to the top navigation */
+/* Styling the nav bar */
 .topnav {
     background-color: #e65700;
     overflow: hidden;
-    border-radius: 1rem;
-    margin-top: 1rem;
+    border-radius: 20px;
 }
 
-/* Style the links inside the navigation bar */
+/* Styling the links inside the navigation bar */
 .topnav a {
     float: left;
     color: white;
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 20px; 
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ffa01c;
 }
-  
-/* Add a color to the active/current link */
+
 .topnav a.active {
     background-color: #ffa01c;
     color: white;
-}
-
-body {
-    margin: 25px;
-}
-
-header {
-    left: 0;
-    top: 0;
-    height: 10rem;
-    color: white;
-    margin-bottom: 15rem;
+    text-align: center;
 }
 
 body {
@@ -53,60 +45,56 @@ body {
     color: white;
 }
 
-#group {
-    font-size: 3.2rem;
-    line-height: 2.2rem;
+.group {
+    font-size: 50px;
 }
 
-#header-logo {
-    position:relative;
+.header-logo {
     width: 100%;
-    display: inline-block;
 }
 
-    #header-logo img {
-        margin-top: 2.5rem;
+    .header-logo img {
+        margin-top: 40px;
         right: 0;
         bottom: 0;
         height: auto;
-        width: 200px;
     }
 
-#header-section {
+.header-section {
     width: 100%;
-    padding-top: 1rem;
+    margin-top: 15px;
     color: white;
 }
 
-    #header-section a:link {
+    .header-section a:link {
         color: #ffffff;
         text-decoration: none;
     }
 
-    #header-section a:visited {
+    .header-section a:visited {
         color: #ffffff;
     }
 
-    #header-section a:hover {
+    .header-section a:hover {
         color: #e65700;
     }
 
-    #header-section a div {
+    .header-section a div {
         display: block;
         width: 100%;
     }
 
 input.get-started-button {
-    width: 25rem;
-    padding: 1.2rem;
+    width: 400px;
+    padding: 20px;
     cursor: pointer;
     font-weight: bold;
     font-size: 150%;
-    background-color: rgba(64, 95, 158, 0);
+    background-color: rgba(64, 95, 158, 0.3);
     color: white;
     border: 5px solid white/*#3366cc*/;
     border-radius: 10px;
-    margin-bottom: 11rem;
+    margin-bottom: 150px;
 }
 
 input.get-started-button:hover {
@@ -117,20 +105,19 @@ input.get-started-button:hover {
 article {
     background: #00aab5;
     border-radius: 15px;
-    padding-bottom: 1rem;
-    margin-bottom: 3rem;
-    padding-top: 0.2rem;
+    margin-bottom: 40px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-#contributors {
+.contributors {
     background: #d4af37;
-    padding-bottom: 1rem;
-    padding-top: 0.5rem;
+    padding-bottom: 10px;
     border-radius: 15px;
 }
 
 h1 {
-    padding-top: 0.4rem;
     font-size: 70px;
 }
 
@@ -140,42 +127,105 @@ h2 {
 
 h3 {
     text-align: center;
-    font-size: 30px;
+    font-size: 2.3vw;
 }
 
 .pics {
     border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
 }
 
 .description {
     font-size: 30px;
-    line-height: 4rem;
 }
 
 .grad-and-major {
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 .column {
     float: left;
-    width: 23%;
-    padding: 0.7rem;
-    height: 23rem; /* Should be removed. Only for demonstration */
-  }
+    width: 25%;
+}
 
-#learn-more {
+.learn-more {
     font-size: 30px;
 }
 
-#about:link {
+.about:link {
     color: #e65700;
     text-decoration: none;
 }
 
-#about:visited {
+.about:visited {
     color: #e65700;
 }
 
-#about:hover, #about:active, #about:focus {
+.about:hover, .about:active, .about:focus {
     color: #870000;
 }
+
+/* TABLET compatibility */
+@media (max-width: 900px) {
+
+    footer {
+        font-size: 20px;
+    }
+
+    .learn-more {
+        font-size: 25px;
+    }
+
+    .description {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin: 20px;
+    }
+
+}
+  
+  /* MOBILE compatibility */
+  @media (max-width: 600px) {
+  
+    footer {
+        font-size: 20px;
+    }
+
+    .topnav a {
+        font-size: 4vw;
+        padding: 2.2vw 2.6vw;
+    }
+
+    .learn-more {
+        font-size: 2vw;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .group {
+        font-size: 8vw;
+    }
+
+    input.get-started-button {
+        width: 50vw;
+        font-size: 5vw;
+        margin-bottom: 50px;
+    }
+
+  }
+  
